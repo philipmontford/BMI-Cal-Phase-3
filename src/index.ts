@@ -71,3 +71,28 @@ function IMCImperialCalculate() {
   console.log("result");
   ShowResult(idealWeightText, typeWeightText, IMC);
 }
+
+// show BMI result
+function ShowResult(idealWeightText: string, typeWeightText: string, IMC: number) {
+  idealWeight.innerHTML = idealWeightText;
+  typeWeight.innerHTML = typeWeightText;
+  score.innerHTML = IMC.toFixed(1);
+
+  if (IMC > 0 && idealWeightText != null && typeWeightText != null) {
+    console.log("Liberado");
+    result.classList.remove("hidden");
+    welcome.classList.add("hidden");
+  }
+}
+
+// function to calculate BMI
+function calcIMC(height: number, weight: number): number {
+  let calcIMC = weight / ((height / 100) * (height / 100));
+  let result = Math.round(calcIMC * 10) / 10;
+
+  if (result >= 0) {
+    return result;
+  } else {
+    return 0;
+  }
+}
