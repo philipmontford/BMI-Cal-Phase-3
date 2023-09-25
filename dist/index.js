@@ -38,3 +38,27 @@ checkboxImperial.onclick = function () {
         checkboxImperial.checked = true;
     }
 };
+// adds a click event to each input element and selects the text inside it
+Array.from(inputs).forEach(function (input) {
+    input.addEventListener("click", function () {
+        this.select();
+    });
+});
+function IMCCalculate() {
+    IMC = calcIMC(parseFloat(height.value), parseFloat(weight.value));
+    let idealWeightText = GetIdealWeight(parseFloat(height.value), false);
+    let typeWeightText = GetClassWeight(IMC);
+    console.log("result Meter");
+    ShowResult(idealWeightText, typeWeightText, IMC);
+}
+function IMCImperialCalculate() {
+    let HeightM = ConvertHeight(parseFloat(foot.value), parseFloat(inch.value));
+    let weightKg = ConvertWeight(parseFloat(stone.value), parseFloat(pound.value));
+    console.log(HeightM);
+    console.log(weightKg);
+    IMC = calcIMC(HeightM, weightKg);
+    let idealWeightText = GetIdealWeight(HeightM, true);
+    let typeWeightText = GetClassWeight(IMC);
+    console.log("result");
+    ShowResult(idealWeightText, typeWeightText, IMC);
+}
