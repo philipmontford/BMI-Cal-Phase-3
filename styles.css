@@ -269,3 +269,45 @@ p {
   flex-direction: row;
   gap: 32px;
 }
+
+.bmi-limitations {
+  margin-bottom: 7.5rem;
+}
+
+.bmi-limitations-content {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  display: grid;
+  grid-template-areas: "container container container . gender gender" ". . age age muscle muscle" ". pregnancy pregnancy race race .";
+  gap: 2rem;
+}
+
+.bmi-limitations-content .container {
+  padding-bottom: 3rem;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-area: container;
+}
+
+.bmi-limitations-content #card-4 {
+  grid-area: gender;
+}
+
+.bmi-limitations-content #card-5 {
+  grid-area: age;
+}
+
+.bmi-limitations-content #card-6 {
+  grid-area: muscle;
+}
+
+.bmi-limitations-content #card-7 {
+  grid-area: pregnancy;
+}
+
+.bmi-limitations-content #card-8 {
+  grid-area: race;
+}
