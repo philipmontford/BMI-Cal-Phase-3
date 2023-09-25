@@ -311,3 +311,96 @@ p {
 .bmi-limitations-content #card-8 {
   grid-area: race;
 }
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.checkbox-group input[type=checkbox] {
+  width: 31px;
+  height: 31px;
+  background-color: white;
+  border-radius: 31px;
+  vertical-align: middle;
+  border: 2px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.checkbox-group input[type=checkbox]:hover {
+  border: 2px solid #345FF6;
+}
+
+.checkbox-group input[type=checkbox]:checked {
+  background-color: #d8e2e7;
+}
+
+.checkbox-group input[type=checkbox]:checked:before {
+  content: "";
+  left: 6px;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  display: block;
+  position: relative;
+  background-color: #345FF6;
+}
+
+.checkbox-group input[type=checkbox]:checked:before:hover {
+  border: transparent;
+}
+
+.checkbox-group label {
+  color: #253347;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.input {
+  display: flex;
+  gap: 24px;
+  border: 1px solid #D8E2E7;
+  padding: 24px 20px;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.input:hover {
+  border: 1px solid #345FF6;
+  cursor: pointer;
+}
+
+.input input[type=number] {
+  color: #253347;
+  font-size: 24px;
+  font-weight: 600;
+  border: transparent;
+  width: 100%;
+}
+
+.input input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.input input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input input[type=number]:active, .input input[type=number]:focus-visible, .input input[type=number]:focus {
+  -webkit-appearance: none;
+  outline: none !important;
+}
+
+.input span {
+  position: relative;
+  font-size: 24px;
+  color: #345FF6;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+}
