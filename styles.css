@@ -404,3 +404,73 @@ p {
   font-weight: 600;
   letter-spacing: -1.2px;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 45px;
+}
+
+.card-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.card-content h3 {
+  color: #253347;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+}
+
+.card-secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 16px;
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+}
+
+.card-secondary-top {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card-secondary-top img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.card-secondary-top h3 {
+  color: #253347;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: end;
+  align-items: flex-start;
+}
+
+.article-content h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -2.4px;
+}
