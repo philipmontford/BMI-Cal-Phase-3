@@ -575,3 +575,61 @@ p {
     letter-spacing: -0.1rem;
   }
 }
+
+/* mobile phones media query */
+@media (max-width: 576px) {
+  .main-container .rectangle {
+    border-radius: 0rem 0rem 2.1875rem 2.1875rem;
+  }
+
+  .main-container-content {
+    max-width: 20.5rem;
+  }
+
+  .main-container-content-right .container {
+    padding: 1.5rem;
+  }
+
+  .main-container-content-right form .input-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .main-container-content-right form .input-container-imperial {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .main-container-content-right .result {
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  .main-container-content-right .result-content {
+    grid-template-columns: 1fr;
+  }
+
+  .your-result {
+    max-width: 20.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .tips-content {
+    max-width: 20.5rem;
+  }
+
+  .bmi-limitations-content {
+    max-width: 20.5rem;
+    gap: 1rem;
+    grid-template-areas: "container" "gender" "age" "muscle" "pregnancy" "race";
+  }
+
+  .bmi-limitations-content .container {
+    padding-bottom: 2.5;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
