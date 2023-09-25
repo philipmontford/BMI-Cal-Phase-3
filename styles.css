@@ -474,3 +474,104 @@ p {
   line-height: 110%;
   letter-spacing: -2.4px;
 }
+
+@media (max-width: 1224px) {
+  .pattern-left {
+    display: none;
+  }
+}
+
+/* tablet media query */
+@media (max-width: 992px) {
+  .main-container {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  .main-container .rectangle {
+    width: 100%;
+    height: 40rem;
+    left: 0;
+    top: 0;
+  }
+
+  .main-container-content {
+    max-width: 42.8rem;
+  }
+
+  .main-container-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-content: center;
+  }
+
+  .main-container-content .logo {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  .main-container-content-left {
+    padding-right: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .main-container-content-left h1 {
+    font-size: 48px;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .your-result {
+    max-width: 42.8rem;
+    gap: 4.69rem;
+  }
+
+  .your-result-content {
+    text-align: start !important;
+    padding: 0;
+  }
+
+  .tips {
+    margin: 0 0 6rem 0;
+    border-radius: 0;
+  }
+
+  .tips-content {
+    max-width: 42.8rem;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .bmi-limitations {
+    margin-bottom: 5.99rem;
+  }
+
+  .bmi-limitations-content {
+    max-width: 42.8rem;
+    grid-template-areas: "container container container container" "gender gender age age" "muscle muscle pregnancy pregnancy" ". race race .";
+  }
+
+  .bmi-limitations-content .container {
+    text-align: center;
+  }
+
+  .card {
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .article-content {
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .article-content h2 {
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
+  }
+}
